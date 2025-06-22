@@ -23,13 +23,19 @@ A lightweight C++ application for managing and generating student report cards. 
 ## 📁 Folder Structure
 
 StudentReportSystem/
-│
+
 ├── main.cpp # Program entry point
+
 ├── menu.cpp / menu.h # Menu system logic
+
 ├── student.cpp / student.h # Student class and methods
+
 ├── .vscode/ # VS Code settings (optional)
+
 ├── school_management.exe # Compiled executable (Windows only)
+
 ├── README.md # Project overview
+
 └── .gitignore # Files to exclude from Git
 
 -----------------------------------------------------------------------------------------------------------------------------
