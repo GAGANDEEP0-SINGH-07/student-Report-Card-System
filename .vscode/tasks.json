@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build all files", // This label should match "preLaunchTask" in launch.json
+            "command": "g++",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${workspaceFolder}\\main.cpp", // Include your main source file
+                "${workspaceFolder}\\student.cpp", // Include your student source file
+                "${workspaceFolder}\\menu.cpp", // Include your menu source file
+                "-o",
+                "${workspaceFolder}\\school_management.exe", // Output executable name (Windows specific .exe)
+                "-std=c++17", // Specify C++17 standard for std::filesystem
+                "-lstdc++fs" // Link filesystem library
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Task generated to build the entire School Management System project."
+        }
+    ]
+}
